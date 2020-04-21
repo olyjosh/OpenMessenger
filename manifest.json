@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Add whatsapp message option to number",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "tab-icon.png",
+    "default_title": "Add WhatsApp message option to number",
+    "default_popup": "newtab.html"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "js": ["jquery-2.2.4.min.js", "content.js"]
+    }
+  ]
+}
